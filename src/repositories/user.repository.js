@@ -50,6 +50,10 @@ exports.loginUser = async (data) => {
       data.email,
     ]);
 
+    if (res.rows <= 0) {
+      return false;
+    }
+
     const hashedPassword = res.rows[0].password;
 
     const isMatch = await bcrypt.compare(data.password, hashedPassword);
