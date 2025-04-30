@@ -15,7 +15,7 @@ const transactRoute = require("../src/routes/transaction.route");
 
 app.use(
   cors({
-    origin: "http://127.0.0.1/",
+    // origin: "http://127.0.0.1/",
     methods: "GET,POST,PUT,DELETE",
   })
 );
