@@ -8,8 +8,8 @@ exports.passwordRegex = (str) => {
   const passwordNumRegex = /[0-9]{1}/;
 
   return (
-    data.password.length > 7 &&
-    passwordSpecCharRegex.test(data.password) &&
-    passwordNumRegex.test(data.password)
+    str.length > 7 &&
+    passwordSpecCharRegex.test(str) &&
+    passwordNumRegex.test(str)
   );
 };

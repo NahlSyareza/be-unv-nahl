@@ -1,7 +1,7 @@
-const db = require("../../src/database/pg.database");
+const db = require("../database/pg.database");
 const bcrypt = require("bcrypt");
 const saltLength = 16;
-const reggex = require("../../src/utils/regex.util");
+const reggex = require("../utils/regex.util");
 
 exports.registerUser = async (data) => {
   let client;
@@ -10,13 +10,18 @@ exports.registerUser = async (data) => {
 
     const emailRegexRes = reggex.emailRegex(data.email);
 
-    console.log(reggex.emailRegex(data.email));
+    console.log(data.email);
+    console.log(data.password);
+
+    console.log(emailRegexRes);
 
     if (!emailRegexRes) {
       return "emailRegexErr";
     }
 
     const passwordRegexRes = reggex.passwordRegex(data.password);
+
+    console.log(passwordRegexRes);
 
     if (!passwordRegexRes) {
       return "passwordRegexErr";
