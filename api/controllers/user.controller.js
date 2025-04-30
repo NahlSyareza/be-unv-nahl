@@ -1,6 +1,6 @@
 const { register } = require("module");
 const userRepo = require("../repositories/user.repository");
-const baseRes = require("../utils/baseResponse.util");
+const baseRes = require("../../src/utils/baseResponse.util");
 
 exports.registerUser = async (req, res) => {
   try {

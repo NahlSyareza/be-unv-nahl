@@ -1,5 +1,5 @@
-const db = require("../database/pg.database");
-const imgUp = require("../utils/imageUpload.util");
+const db = require("../../src/database/pg.database");
+const imgUp = require("../../src/utils/imageUpload.util");
 
 exports.createItem = async (req, img) => {
   let client;

@@ -1,4 +1,4 @@
-const db = require("../database/pg.database");
+const db = require("../../src/database/pg.database");
 
 exports.createTransaction = async (req) => {
   let client;

@@ -1,6 +1,6 @@
 const itemRepo = require("../repositories/item.repository");
-const baseRes = require("../utils/baseResponse.util");
-const spsTitan = require("../utils/imageUpload.util");
+const baseRes = require("../../src/utils/baseResponse.util");
+const spsTitan = require("../../src/utils/imageUpload.util");
 
 exports.createItem = async (req, res) => {
   try {

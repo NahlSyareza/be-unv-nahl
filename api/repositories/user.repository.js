@@ -1,7 +1,7 @@
-const db = require("../database/pg.database");
+const db = require("../../src/database/pg.database");
 const bcrypt = require("bcrypt");
 const saltLength = 16;
-const reggex = require("../utils/regex.util");
+const reggex = require("../../src/utils/regex.util");
 
 exports.registerUser = async (data) => {
   let client;

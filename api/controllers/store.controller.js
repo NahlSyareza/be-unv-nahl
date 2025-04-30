@@ -1,5 +1,5 @@
 const storeRepo = require("../repositories/store.repository");
-const baseRes = require("../utils/baseResponse.util");
+const baseRes = require("../../src/utils/baseResponse.util");
 
 exports.getAllStores = async (req, res) => {
   try {

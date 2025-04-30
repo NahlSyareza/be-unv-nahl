@@ -1,5 +1,5 @@
 const transactRepo = require("../repositories/transaction.repository");
-const baseRes = require("../utils/baseResponse.util");
+const baseRes = require("../../src/utils/baseResponse.util");
 
 exports.createTransaction = async (req, res) => {
   try {
