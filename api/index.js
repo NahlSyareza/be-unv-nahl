@@ -8,10 +8,10 @@ app.use(express.json());
 
 require("dotenv").config();
 
-const storeRoute = require("./api/routes/store.route");
-const userRoute = require("./api/routes/user.route");
-const itemRoute = require("./api/routes/item.route");
-const transactRoute = require("./api/routes/transaction.route");
+const storeRoute = require("../src/routes/store.route");
+const userRoute = require("../src/routes/user.route");
+const itemRoute = require("../src/routes/item.route");
+const transactRoute = require("../src/routes/transaction.route");
 
 app.use(
   cors({
