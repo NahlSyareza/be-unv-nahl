@@ -20,14 +20,14 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-  return res.send("Start querying now!");
-});
-
 app.use("/store", storeRoute);
 app.use("/user", userRoute);
 app.use("/item", itemRoute);
 app.use("/transaction", transactRoute);
+
+app.get("/", (req, res) => {
+  res.send("Start querying now!");
+});
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running at http://localhost:${process.env.PORT}`);
