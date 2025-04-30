@@ -20,7 +20,7 @@ app.use(
   })
 );
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   return res.send("Start querying now!");
 });
 
