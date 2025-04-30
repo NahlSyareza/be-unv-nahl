@@ -20,6 +20,10 @@ app.use(
   })
 );
 
+app.use("/", (req, res) => {
+  return res.send("Start querying now!");
+});
+
 app.use("/store", storeRoute);
 app.use("/user", userRoute);
 app.use("/item", itemRoute);
